@@ -1,7 +1,7 @@
 from enum import Enum
 from math import sin, cos
 
-from pattern.builder import Phone
+from patterns.python.creational.builder import Phone
 
 
 class CoordinateSystem(Enum):
