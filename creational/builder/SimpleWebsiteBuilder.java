@@ -3,17 +3,20 @@ package creational.builder;
 public class SimpleWebsiteBuilder extends WebsiteBuilder {
 
     @Override
-    void buildName() {
+    SimpleWebsiteBuilder buildName() {
         website.setName("Simple Website Builder");
+        return this;
     }
 
     @Override
-    void buildCms() {
+    SimpleWebsiteBuilder buildCms() {
         website.setCms(Cms.TILDA);
+        return this;
     }
 
     @Override
-    void buildPrice() {
+    SimpleWebsiteBuilder buildPrice() {
         website.setPrice(500);
+        return this;
     }
 }

@@ -3,17 +3,20 @@ package creational.builder;
 public class EnterpriseWebsiteBuilder extends WebsiteBuilder {
 
     @Override
-    void buildName() {
+    EnterpriseWebsiteBuilder buildName() {
         website.setName("Enterprise Website");
+        return this;
     }
 
     @Override
-    void buildCms() {
+    EnterpriseWebsiteBuilder buildCms() {
         website.setCms(Cms.WORDPRESS);
+        return this;
     }
 
     @Override
-    void buildPrice() {
+    EnterpriseWebsiteBuilder buildPrice() {
         website.setPrice(1000);
+        return this;
     }
 }
